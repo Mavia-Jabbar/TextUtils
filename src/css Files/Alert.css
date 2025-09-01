@@ -1,0 +1,35 @@
+.alert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.alert-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 600px;
+  min-width: 250px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .alert-box {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .alert-box {
+    width: 95%;
+    font-size: 0.85rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+}

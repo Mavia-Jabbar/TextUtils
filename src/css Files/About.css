@@ -1,0 +1,38 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .about-container p {
+    font-size: 0.9rem;
+  }
+}
