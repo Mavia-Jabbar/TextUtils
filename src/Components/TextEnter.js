@@ -33,7 +33,12 @@ export default function TextEnter(props) {
   };
 
   const countCharacters = () => {
-    let newtext = text.trim().split(/\s+/).length;
+    let newtext = text
+      .trim()
+      .split(/\s+/)
+      .filter((element) => {
+        element.length != 0;
+      }).length;
     let newTextLength = text.length;
     settextLength(newTextLength);
     setlength(newtext);
