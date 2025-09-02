@@ -36,9 +36,7 @@ export default function TextEnter(props) {
     let newtext = text
       .trim()
       .split(/\s+/)
-      .filter((element) => {
-        element.length != 0;
-      }).length;
+      .filter((element) => element.length !== 0).length;
     let newTextLength = text.length;
     settextLength(newTextLength);
     setlength(newtext);
